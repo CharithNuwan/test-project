@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/hello",  "dest": "/api/hello.js"  },
+    { "src": "/api/dbtest", "dest": "/api/dbtest.js" },
+    { "src": "/(.*)",       "dest": "/api/page.js"   }
+  ]
+}

@@ -3,7 +3,7 @@ module.exports = function handler(req, res) {
   res.setHeader('Content-Type', 'text/html');
   res.status(200).send(`
     <!DOCTYPE html>
-    <html>
+    <html> 
     <head>
       <title>Vercel Test</title>
       <style>
